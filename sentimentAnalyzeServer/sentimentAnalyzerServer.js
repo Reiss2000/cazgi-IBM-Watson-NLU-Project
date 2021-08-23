@@ -53,6 +53,7 @@ function getAnalyseParams(input, isText, isEmotion) {
       keywords: {
         emotion: isEmotion,
         sentiment: !isEmotion,
+        limit: 1,
       },
     },
   };

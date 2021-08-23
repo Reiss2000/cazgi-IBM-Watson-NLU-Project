@@ -36,7 +36,7 @@ class App extends React.Component {
       let sentiment;
       let confidence;
       if (this.state.mode === "url") {
-        sentiment = response.data.result.entities[0].sentiment;
+        sentiment = response.data.result.keywords[0].sentiment;
         confidence = response.data.result.entities[0].confidence;
       } else {
         sentiment = response.data.result.keywords[0].sentiment;
@@ -49,7 +49,7 @@ class App extends React.Component {
             <p style={{ color: "green" }}>Sentiment score: {sentiment.score}</p>
           </div>
         );
-      } else if (sentiment === "negative") {
+      } else if (sentiment.label === "negative") {
         output = (
           <div style={{ fontSize: 20, marginTop: "20px" }}>
             <p style={{ color: "red" }}>Sentiment score: {sentiment.score}</p>
