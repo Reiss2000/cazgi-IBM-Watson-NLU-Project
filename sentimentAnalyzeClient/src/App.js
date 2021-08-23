@@ -59,7 +59,7 @@ class App extends React.Component {
       } else {
         output = (
           <div style={{ fontSize: 20, marginTop: "20px" }}>
-            <p style={{ color: "orange" }}>Sentiment score: {sentiment.score}</p>
+            <p style={{ color: "yellow" }}>Sentiment score: {sentiment.score}</p>
             {confidence && <p style={{ color: "black" }}>Confidence score: {confidence}</p>}
           </div>
         );
