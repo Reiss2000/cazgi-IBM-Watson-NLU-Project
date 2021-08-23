@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.sadness {
+    color: blue;
+}
+
+.joy, .positive {
+    color: green;
+}
+
+.fear, .confidence {
+    color: black;
+}
+
+.disgust {
+    color: brown;
+}
+
+.anger, .negative {
+    color: red;
+}
